@@ -1,0 +1,36 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+
+/* ================================= 
+  Basic layout
+==================================== */
+
+.main-header {
+    text-align: center;
+}
+
+
+
+/* ================================= 
+  Header
+==================================== */
+
+.top-title {
+    background: black;
+    color: white;
+    margin: 0 0 1em;
+    padding: 30px;
+}
+
+.top-description {
+    border-bottom: solid 4px black;
+    margin-bottom: 1em;
+    padding-bottom: 3em;
+}
+
