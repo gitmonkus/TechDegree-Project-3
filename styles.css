@@ -6,6 +6,16 @@
 	box-sizing: border-box;
 }
 
+/* ================================= 
+  DRY
+==================================== */
+
+.clear-format {
+  border: none;
+}
+.padding {
+  padding: 1em;
+}
 
 /* ================================= 
   Basic layout
@@ -14,23 +24,38 @@
 .main-header {
     text-align: center;
 }
-
-
+/* .main-contact::before {
+  border-top: solid 2px orange;
+} */
+.main-contact,
+.main-newsletter {
+  display: flex;
+}
+.main-contact input {
+  flex: 1;
+}
 
 /* ================================= 
   Header
 ==================================== */
 
 .top-title {
-    background: black;
+    background: #2D3945;
     color: white;
     margin: 0 0 1em;
     padding: 30px;
 }
 
 .top-description {
-    border-bottom: solid 4px black;
-    margin-bottom: 1em;
-    padding-bottom: 3em;
+  border-bottom: double 4px black;
+  padding-bottom: 3em;
 }
 
+/* ================================= 
+  Form
+==================================== */
+
+legend {
+  font-weight: bold;
+  font-size: 20px;
+}
