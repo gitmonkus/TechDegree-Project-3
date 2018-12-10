@@ -27,6 +27,9 @@
   flex-direction: row;
   align-items: left;
 }
+.box-shadow {
+  text-shadow: 1px 1px #7F8B97;
+}
 
 
 /* ================================= 
@@ -61,6 +64,7 @@ footer p {
   text-align: center;
   font-style: italic;
   color: #7F8B97;
+  margin-bottom: 12em;
 
 }
 
@@ -105,6 +109,7 @@ fieldset select {
   background: #EFF0F1;
   border: none;
   color: #7F8B97;
+  padding-left: 1em;
 }
 fieldset input:placeholder-shown {
   text-align: left;
@@ -115,28 +120,30 @@ fieldset input::placeholder {
 fieldset input:last-child {
   width: 50%;
 }
-fieldset input:focus {
+fieldset input:focus,
+fieldset select:focus,
+.main-textbox:focus {
   border: solid 2px #4C6988;
   outline: none;
   text-align: left;
+  padding-left: 1em;
 }
 fieldset input[placeholder] {
   padding: 1em;
-  font-style: italic;
 }
+
+
 fieldset label {
   color: #7F8B97;
   padding: 1em 1em 1em 0;
 }
 .main-newsletter input {
-  flex: .25;
-  /* border: solid 1px red; */
+  flex: .5;
 }
 
 .main-newsletter label {
   flex: 4;
   padding-top: 0;
-  /* border: solid 1px red; */
 }
 
 .main-textbox {
@@ -146,6 +153,7 @@ fieldset label {
   background: #EFF0F1;
   resize: none;
   border-radius: 5px;
+  padding: 1em;
 }
 .button-flex {
   display: flex;
@@ -153,8 +161,11 @@ fieldset label {
 }
 .main-button {
   width: 90%;
-  padding: 1em;
+  font-weight: bold;
+  height: 4rem;
   background: #4EBBB5;
   color: white;
   border-radius: 5px;
+  font-size: 20px;
+  margin: 1rem 0;
 }
