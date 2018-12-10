@@ -16,23 +16,52 @@
 .padding {
   padding: 1em;
 }
+.soft-color {
+  color: #7F8B97;
+}
+.flex {
+  display: flex;
+}
+.flex-position {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+}
+
 
 /* ================================= 
   Basic layout
 ==================================== */
 
+section {
+  width: 90%;
+  margin: 0 auto;
+}
 .main-header {
     text-align: center;
 }
-/* .main-contact::before {
-  border-top: solid 2px orange;
-} */
-.main-contact,
-.main-newsletter {
-  display: flex;
+
+legend,
+h2 {
+  font-weight: bold;
+  font-size: 20px;
+  color: #323B46;
+  text-shadow: .5px .5px #323B46;
 }
-.main-contact input {
-  flex: 1;
+.top-title {
+  font-size: 22px;
+  text-shadow: .5px .5px white;
+}
+.newsletter-border {
+  border-top: solid 2px #2F3944;
+  width: 100%;
+  padding-top: 1.5em;
+}
+footer p {
+  text-align: center;
+  font-style: italic;
+  color: #7F8B97;
+
 }
 
 /* ================================= 
@@ -45,17 +74,87 @@
     margin: 0 0 1em;
     padding: 30px;
 }
+.top-description::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 3px;
+  border-bottom: solid 4px black;
 
+}
 .top-description {
-  border-bottom: double 4px black;
+  position: relative;
+  border-bottom: solid 2px black;
   padding-bottom: 3em;
+  color: #7F8B97;
+
 }
 
 /* ================================= 
   Form
 ==================================== */
 
-legend {
-  font-weight: bold;
-  font-size: 20px;
+
+.main-contact input,
+fieldset select {
+  flex: 1;
+  height: 3em;
+  width: 100%;
+  border-radius: 5px;
+  background: #EFF0F1;
+  border: none;
+  color: #7F8B97;
+}
+fieldset input:placeholder-shown {
+  text-align: left;
+}
+fieldset input::placeholder {
+  text-align: right;
+}
+fieldset input:last-child {
+  width: 50%;
+}
+fieldset input:focus {
+  border: solid 2px #4C6988;
+  outline: none;
+  text-align: left;
+}
+fieldset input[placeholder] {
+  padding: 1em;
+  font-style: italic;
+}
+fieldset label {
+  color: #7F8B97;
+  padding: 1em 1em 1em 0;
+}
+.main-newsletter input {
+  flex: .25;
+  /* border: solid 1px red; */
+}
+
+.main-newsletter label {
+  flex: 4;
+  padding-top: 0;
+  /* border: solid 1px red; */
+}
+
+.main-textbox {
+  width: 100%;
+  height: 6em;
+  border: none;
+  background: #EFF0F1;
+  resize: none;
+  border-radius: 5px;
+}
+.button-flex {
+  display: flex;
+  justify-content: center;
+}
+.main-button {
+  width: 90%;
+  padding: 1em;
+  background: #4EBBB5;
+  color: white;
+  border-radius: 5px;
 }
