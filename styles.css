@@ -21,6 +21,7 @@
 }
 .flex {
   display: flex;
+  flex-direction: column;
 }
 .flex-position {
   display: flex;
@@ -180,7 +181,7 @@ fieldset label {
 ==================================== */
 
 @media (min-width: 768px) {
-  .flex-768 {
+  .flex {
   display: flex;
   flex-direction: row;
 }
