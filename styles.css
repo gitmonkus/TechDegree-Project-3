@@ -167,7 +167,8 @@ fieldset input[placeholder] {
   padding: 1em;
 }
 fieldset label {
-  color: rgb(27, 65, 104);
+  color: rgb(0, 36, 71);
+  text-shadow: .5px .5px black;
   padding: 1em 1em 1em 0;
 }
 .main-contact {
