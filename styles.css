@@ -36,17 +36,7 @@ body {
 .box-shadow {
   text-shadow: 1px 1px #7F8B97;
 }
-#name:valid,
-#email:valid,
-#number:valid,
-#address:valid,
-#city:valid,
-#zipcode:valid,
-select:valid {
-  background: url(16px-Checkmark_green.png) !important;
-  background-repeat: no-repeat !important;
-  border: solid 2px green;
-}
+
 
 
 /* ================================= 
@@ -210,6 +200,12 @@ fieldset label {
    width: 50%;
  }
 
+ input:valid,
+ select:valid {
+   background: url(16px-Checkmark_green.png) !important;
+   background-repeat: no-repeat !important;
+   border: solid 2px green;
+ }
 /* ================================= 
   Media Query 768px
 ==================================== */
