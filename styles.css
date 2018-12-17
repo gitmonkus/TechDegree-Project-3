@@ -196,8 +196,6 @@ fieldset label {
   font-size: 24px;
   margin: 1rem;
   cursor: pointer;
-
-  
 }
  #zipcode {
    width: 50%;
@@ -209,16 +207,17 @@ fieldset label {
    background-repeat: no-repeat !important;
    border: solid 2px green;
  }
+
 /* ================================= 
   Media Query 768px
 ==================================== */
 
 @media (min-width: 768px) {
 
-
 /* ================================= 
   Basic layout
 ==================================== */  
+
   .flex {
   display: flex;
   flex-direction: row;
