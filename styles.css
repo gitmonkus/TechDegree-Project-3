@@ -29,9 +29,13 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .flex-position {
   display: flex;
   flex-direction: row;
+}
+.hover-label label:hover {
+  color: #7F8B97;
 }
 .box-shadow {
   text-shadow: 1px 1px #7F8B97;
@@ -132,6 +136,9 @@ select:invalid {
   padding-left: 1em;
   opacity: .8;
 }
+fieldset input {
+  transition: linear .2s;
+}
 fieldset input:placeholder-shown {
   text-align: left;
 }
@@ -145,7 +152,6 @@ fieldset select:focus,
   outline: none;
   text-align: left;
   padding-left: 1em;
-  transition: linear .2s;
   background: linear-gradient(#5cdafa, #9198e5);
   opacity: .5;
 }
@@ -165,9 +171,7 @@ fieldset label {
   text-shadow: .5px .5px black;
   padding: 1em 1em 1em 0;
 }
-fieldset label:hover {
-  color: #7F8B97;
-}
+
 .main-contact {
   margin-bottom: 1rem;
 }
