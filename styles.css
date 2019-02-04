@@ -233,8 +233,7 @@ fieldset label {
 ==================================== */  
 
   .flex {
-  display: flex;
-  flex-direction: row;
+    display: block;
   }
   section {
     margin-top: 4rem;
@@ -242,7 +241,14 @@ fieldset label {
   .main-contact {
     margin-top: 3rem;
   }
+  .main-contact input,
+  fieldset select,
+  select:invalid {
+    width: 74%;
+  }
+
   .main-contact label {
+    display: inline-block;
     width: 25%;
   }
   #zipcode {
@@ -255,9 +261,15 @@ fieldset label {
   .main-newsletter input {
     flex: .2;
   }
+  .main-newsletter label {
+    padding: 1em 1em 1em 0;
+  }
   .contact-info {
     padding-bottom: 1.5rem;
   }
 
 
 }
+
+
+
